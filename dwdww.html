@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IntroTap — Jay</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 380px;
+      padding: 24px;
+      text-align: center;
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .tagline {
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+
+    .play-btn {
+      background: #ff2d55;
+      border: none;
+      color: white;
+      padding: 14px;
+      width: 100%;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .play-btn:active {
+      transform: scale(0.98);
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      background: rgba(255,255,255,0.1);
+      padding: 14px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      transition: background 0.2s;
+    }
+
+    .links a:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="Profile Photo">
+
+    <h1>Jay ⚡</h1>
+    <div class="tagline">Tap first. Talk later.</div>
+
+    <button class="play-btn" onclick="playMusic()">▶ Tap to Play the Vibe</button>
+
+    <audio id="music">
+      <!-- Replace this with your own MP3 -->
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="links">
+      <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+      <a href="https://tiktok.com" target="_blank">🎵 TikTok</a>
+      <a href="https://snapchat.com" target="_blank">👻 Snapchat</a>
+      <a href="https://open.spotify.com" target="_blank">🎧 Spotify</a>
+    </div>
+
+    <div class="footer">
+      INTRO TAP • Made for the night
+    </div>
+  </div>
+
+  <script>
+    function playMusic() {
+      const music = document.getElementById("music");
+      music.volume = 0.6;
+      music.play();
+    }
+  </script>
+
+</body>
+</html>
