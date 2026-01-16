@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>IntroTap — Black Label</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  background:
+    url('https://imgur.com/5IupSDG.png') center / cover no-repeat;
+
+  position: relative;
+  overflow: hidden;
+}
+
+}
+
+/* Outer glow frame */
+.frame {
+  padding: 3px;
+  border-radius: 34px;
+  background: linear-gradient(135deg, rgba(255,45,85,0.6), rgba(120,115,255,0.6));
+}
+
+/* Main UI panel */
+.panel {
+  width: 92%;
+  max-width: 420px;
+  padding: 26px 22px 28px;
+  border-radius: 32px;
+
+  background: rgba(10,10,15,0.75);
+  backdrop-filter: blur(26px);
+  box-shadow:
+    0 40px 100px rgba(0,0,0,0.8),
+    inset 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+/* Identity Header */
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.profile {
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.identity h1 {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.identity span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 4px;
+}
+
+/* Status chip */
+.status {
+  background: linear-gradient(135deg, rgba(255,45,85,0.25), rgba(120,115,255,0.25));
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  width: fit-content;
+  margin-bottom: 22px;
+  backdrop-filter: blur(10px);
+}
+
+/* Section */
+.section {
+  margin-bottom: 22px;
+}
+
+.section-title {
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+/* Music module */
+.music {
+  background: rgba(255,255,255,0.05);
+  border-radius: 22px;
+  padding: 14px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 16px;
+  border: none;
+}
+
+/* Social grid */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.social-grid a {
+  height: 58px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.social-grid a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.social-grid img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Brand signature */
+.signature {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signature span {
+  font-size: 11px;
+  opacity: 0.45;
+}
+
+.tap {
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="frame">
+  <div class="panel">
+
+    <div class="identity">
+      <img class="profile" src="https://i.imgur.com/1tMSd7O.jpg" alt="Ladan">
+      <div>
+        <h1>LADAN</h1>
+        <span>IntroTap • Black Label</span>
+      </div>
+    </div>
+
+    <div class="status">ACTIVE • NFC PROFILE</div>
+
+    <div class="section">
+      <div class="section-title">NOW PLAYING</div>
+      <div class="music">
+        <iframe src="https://open.spotify.com/embed/playlist/11Vo6S7me6VPaXn98qVazP"
+          allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">CONNECT</div>
+      <div class="social-grid">
+        <a href="https://www.instagram.com/wsladan/" target="_blank">
+          <img src="https://i.imgur.com/JdLvg67.png">
+        </a>
+        <a href="https://www.tiktok.com/@whitestu" target="_blank">
+          <img src="https://i.imgur.com/2o8jETU.png">
+        </a>
+        <a href="https://www.facebook.com/ladan.whitestu/" target="_blank">
+          <img src="https://imgur.com/U3xrKiO.png">
+        </a>
+        <a href="https://open.spotify.com/user/3166pg6to4xlxjotkoch62hfrsnq" target="_blank">
+          <img src="https://i.imgur.com/1b57Ych.png">
+        </a>
+      </div>
+    </div>
+
+    <div class="signature">
+      <span>@INTROTAP</span>
+      <div class="tap">TAP • CONNECT • GO</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
