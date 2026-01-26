@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For You</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+       body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #2a2a2a;
+
+      /* ✅ DIRECT IMGUR IMAGE ONLY */
+      background-image: url("https://imgur.com/kurtitmbg-3xfDc6q.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+
+    /* Dark overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: auto;
+      padding: 32px 20px 60px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      color: white;
+      animation: fadeDown 1s ease;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.6rem;
+      margin: 0;
+    }
+
+    header p {
+      opacity: 0.85;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .section {
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(12px);
+      border-radius: 22px;
+      padding: 26px;
+      margin-bottom: 28px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+      animation: fadeUp 1s ease;
+    }
+
+    .section-title {
+      font-weight: 500;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.6;
+      margin-bottom: 12px;
+    }
+
+    .section p {
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 16px;
+      margin-top: 14px;
+      object-fit: cover;
+    }
+
+    video, iframe {
+      width: 100%;
+      border-radius: 16px;
+      margin-top: 14px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.85rem;
+      color: white;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <h1>Hey, my love 🤍</h1>
+      <p>This page exists because you exist</p>
+    </header>
+
+    <!-- LETTER -->
+    <div class="section">
+      <div class="section-title">A note for you</div>
+      <p>
+        I wanted you to have something you could come back to,
+        something that quietly reminds you how deeply you’re loved.
+        Every word here is real. Every feeling is yours.
+      </p>
+    </div>
+
+    <!-- PHOTO -->
+    <div class="section">
+      <div class="section-title">Us</div>
+      <p>This moment will always stay with me.</p>
+      <img src="photo1.jpg" alt="Our memory">
+    </div>
+
+    <!-- SPOTIFY -->
+<div class="section">
+  <div class="section-title">Our song</div>
+
+  <iframe
+    src="https://open.spotify.com/embed/track/SPOTIFY_TRACK_ID"
+    width="100%"
+    height="152"
+    frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"
+    style="border-radius: 16px;">
+  </iframe>
+</div>
+
+
+    <!-- MUSIC -->
+    <div class="section">
+      <div class="section-title">Our song</div>
+      <iframe 
+        src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- FINAL MESSAGE -->
+    <div class="section">
+      <div class="section-title">My Lalan</div>
+      <p>
+        Kanit ano man ang mangyare, gumunaw man ang mundo, magkawatakwatak pa ang balat ko, 
+        pumuti man ang kulay ng buhok ko, maging kaaway man ang lahat ng tao sa mundo,
+	makalimutan man kung paano bigkasin ang ating mga pangalan dahil sa pag ikot ng 
+	kamay sa relo, ikaw at ikaw parin ang pipiliin ko.
+      </p>
+    </div>
+
+    <footer>
+      I love you.
+    </footer>
+
+  </div>
+</body>
+</html>
